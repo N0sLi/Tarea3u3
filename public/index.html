@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Micro-Blog Institucional</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; }
+    form { display: flex; gap: .5rem; margin-bottom: 1rem; }
+    textarea { flex: 1; height: 80px; resize: vertical; }
+    button { padding: .6rem 1rem; cursor: pointer; }
+    .error { color: #c00; margin:.5rem 0; }
+    .post { border: 1px solid #ddd; padding: .75rem; border-radius: .5rem; margin-bottom: .75rem; }
+    .meta { font-size: .85rem; opacity:.7; }
+  </style>
+</head>
+<body>
+  <h1>Micro-Blog Institucional</h1>
+  <form id="postForm">
+    <textarea id="text" maxlength="280" placeholder="Comparte algo (máx. 280)"></textarea>
+    <button type="submit">Publicar</button>
+  </form>
+  <div class="error" id="error"></div>
+  <div id="list"></div>
+  <script src="app.js" type="module"></script>
+</body>
+</html>
